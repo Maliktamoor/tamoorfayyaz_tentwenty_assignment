@@ -41,4 +41,4 @@ It demonstrates clean UI design, functional interactivity, and professional deve
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/Maliktamoor/tamoorfayyaz_tentwenty_assignment.git
+   git clone https://github.com/Maliktamoor/tamoorfayyaz_tentwenty_assignment
