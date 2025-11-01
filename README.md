@@ -20,9 +20,9 @@ It demonstrates clean UI design, functional interactivity, and professional deve
 ## ⚙️ Tech Stack
 
 - **React Native** – Cross-platform mobile framework  
-- **JavaScript (ES6+)** – Core language  
+- **TypeScript** – Core language  
 - **React Navigation** – For seamless screen transitions  
-- **Expo / CLI Build (if applicable)** – For building and testing  
+- **RTK (Redux Toolkit)** – For efficient API calling and state management  
 - **Git & GitHub** – Version control and code collaboration  
 
 ---
