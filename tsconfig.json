@@ -1,0 +1,18 @@
+{
+  "extends": "@react-native/typescript-config",
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["**/node_modules", "**/Pods"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@constants/*": ["src/constants/*"],
+      "@screens/*": ["src/screens/*"],
+      "@utilities/*": ["src/utilities/*"],
+      "@navigation/*": ["src/navigation/*"],
+      "@core_ui/*": ["src/core_ui/*"], 
+      "@config/*": ["src/config/*"] 
+    }
+  }
+}
