@@ -366,7 +366,7 @@ const SeatMapping = () => {
             { borderColor: Colors.c2 },
             isSelected && { borderColor: Colors.secondary, borderWidth: 2 },
           ]}
-          onPress={() =>setSelectedShowtime(showtime.id)}
+          onPress={() => setSelectedShowtime(showtime.id)}
           activeOpacity={0.7}
         >
           <View style={styles.seatMapPreview}>
@@ -499,14 +499,16 @@ const SeatMapping = () => {
             { paddingBottom: hp('10%') + insets.bottom },
           ]}
         >
-          {mockShowtimes.map((showtime, index) => renderShowtimeCard(showtime, index))}
+          {mockShowtimes.map((showtime, index) =>
+            renderShowtimeCard(showtime, index),
+          )}
         </ScrollView>
 
         <View style={[styles.bottomButtonContainer]}>
           <Button
             title="Select Seats"
             onPress={() => {
-              navigation.navigate(Routes.SlotBooking as never)
+              navigation.navigate(Routes.SlotBooking as never);
             }}
             containerStyle={{
               backgroundColor: Colors.secondary,

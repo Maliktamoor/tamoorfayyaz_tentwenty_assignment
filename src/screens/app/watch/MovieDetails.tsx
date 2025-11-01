@@ -213,7 +213,9 @@ const MovieDetails = () => {
                 )}
                 <Button
                   title="Get Tickets"
-                  onPress={() => navigation.navigate(Routes.SeatMapping as never)}
+                  onPress={() =>
+                    navigation.navigate(Routes.SeatMapping as never)
+                  }
                   textStyle={{
                     color: Colors.white,
                     fontFamily: FontFamily.bold,

@@ -48,9 +48,7 @@ const MovieSearch = () => {
     data: searchResults,
     isLoading: isSearchLoading,
     isFetching: isSearchFetching,
-  } = useSearchMoviesQuery(
-    { query: searchQuery },
-  );
+  } = useSearchMoviesQuery({ query: searchQuery });
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -119,16 +117,11 @@ const MovieSearch = () => {
           navigation.navigate(Routes.MovieDetails, { movieId: item.id })
         }
       >
-        {/* <Image
-          source={{
-            uri: item.poster_path
-              ? `${imageBaseUrl}${item.poster_path}`
-              : 'https://via.placeholder.com/500x750?text=No+Image',
-          }}
-          style={styles.posterImage}
-          resizeMode="cover"
-        /> */}
-        <GetImage movieId={item.id} imageType="poster" imageStyle={styles.posterImage} />
+        <GetImage
+          movieId={item.id}
+          imageType="poster"
+          imageStyle={styles.posterImage}
+        />
         <View style={styles.movieTitleContainer}>
           <Text
             style={[
